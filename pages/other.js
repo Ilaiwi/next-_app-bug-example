@@ -7,7 +7,7 @@ import Page from '../components/Page'
 class Counter extends React.Component {
   static getInitialProps ({ store, isServer }) {
     store.dispatch(serverRenderClock(isServer))
-    store.dispatch(addCount())
+    store.dispatch(add())
     return { isServer }
   }
 
